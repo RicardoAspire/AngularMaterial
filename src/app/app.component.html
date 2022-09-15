@@ -1,3 +1,407 @@
-<div class="container">
-  <h1>Hello</h1>
+<div class="container" style="padding: 60px;">
+  <div class="row">
+    <div class="col">
+      <h1>ANGULAR MATERIAL & BOOTSTRAP V5 EXAMPLES</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="d-flex align-items-start">
+      <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <button class="nav-link active" id="v-pills-buttons-tab" data-bs-toggle="pill" 
+        data-bs-target="#v-pills-buttons" type="button" role="tab" aria-controls="v-pills-buttons" aria-selected="true">
+          Buttons
+        </button>
+        <button class="nav-link" id="v-pills-card-tab" data-bs-toggle="pill" 
+        data-bs-target="#v-pills-card" type="button" role="tab" aria-controls="v-pills-card" aria-selected="false">
+          Cards
+        </button>
+        <button class="nav-link" id="v-pills-dialogs-tab" data-bs-toggle="pill" 
+        data-bs-target="#v-pills-dialogs" type="button" role="tab" aria-controls="v-pills-dialogs" aria-selected="false">
+          Dialogs
+        </button>
+        <button class="nav-link" id="v-pills-forms-tab" data-bs-toggle="pill" 
+        data-bs-target="#v-pills-forms" type="button" role="tab" aria-controls="v-pills-forms" aria-selected="false">
+          Forms
+        </button>
+        <button class="nav-link" id="v-pills-progressbars-tab" data-bs-toggle="pill" 
+        data-bs-target="#v-pills-progressbars" type="button" role="tab" aria-controls="v-pills-progressbars" aria-selected="false">
+          Progress bars
+        </button>
+        <button class="nav-link" id="v-pills-tables-tab" data-bs-toggle="pill" 
+        data-bs-target="#v-pills-tables" type="button" role="tab" aria-controls="v-pills-tables" aria-selected="false">
+          Tables
+        </button>
+        <button class="nav-link" id="v-pills-sidenavs-tab" data-bs-toggle="pill" 
+        data-bs-target="#v-pills-sidenavs" type="button" role="tab" aria-controls="v-pills-sidenavs" aria-selected="false">
+          Sidenavs
+        </button>
+        <button class="nav-link" id="v-pills-stepper-tab" data-bs-toggle="pill" 
+        data-bs-target="#v-pills-stepper" type="button" role="tab" aria-controls="v-pills-stepper" aria-selected="false">
+          Stepper
+        </button>
+      </div>
+      <div class="tab-content" id="v-pills-tabContent">
+        <div class="tab-pane fade show active" id="v-pills-buttons" role="tabpanel" aria-labelledby="v-pills-buttons-tab" tabindex="0">
+          <section>
+            <div class="example-label">Basic</div>
+            <div class="example-button-row">
+              <button mat-button>Basic</button>
+              <button mat-button color="primary">Primary</button>
+              <button mat-button color="accent">Accent</button>
+              <button mat-button color="warn">Warn</button>
+              <button mat-button disabled>Disabled</button>
+              <a mat-button href="https://www.google.com/" target="_blank">Link</a>
+            </div>
+          </section>
+          <mat-divider></mat-divider>
+          <section>
+            <div class="example-label">Raised</div>
+            <div class="example-button-row">
+              <button mat-raised-button>Basic</button>
+              <button mat-raised-button color="primary">Primary</button>
+              <button mat-raised-button color="accent">Accent</button>
+              <button mat-raised-button color="warn">Warn</button>
+              <button mat-raised-button disabled>Disabled</button>
+              <a mat-raised-button href="https://www.google.com/" target="_blank">Link</a>
+            </div>
+          </section>
+          <mat-divider></mat-divider>
+          <section>
+            <div class="example-label">Stroked</div>
+            <div class="example-button-row">
+              <button mat-stroked-button>Basic</button>
+              <button mat-stroked-button color="primary">Primary</button>
+              <button mat-stroked-button color="accent">Accent</button>
+              <button mat-stroked-button color="warn">Warn</button>
+              <button mat-stroked-button disabled>Disabled</button>
+              <a mat-stroked-button href="https://www.google.com/" target="_blank">Link</a>
+            </div>
+          </section>
+          <mat-divider></mat-divider>
+          <section>
+            <div class="example-label">Flat</div>
+            <div class="example-button-row">
+              <button mat-flat-button>Basic</button>
+              <button mat-flat-button color="primary">Primary</button>
+              <button mat-flat-button color="accent">Accent</button>
+              <button mat-flat-button color="warn">Warn</button>
+              <button mat-flat-button disabled>Disabled</button>
+              <a mat-flat-button href="https://www.google.com/" target="_blank">Link</a>
+            </div>
+          </section>
+          <mat-divider></mat-divider>
+          <section>
+            <div class="example-label">Icon</div>
+            <div class="example-button-row">
+              <div class="example-flex-container">
+                <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+                  <mat-icon>more_vert</mat-icon>
+                </button>
+                <button mat-icon-button color="primary" aria-label="Example icon button with a home icon">
+                  <mat-icon>home</mat-icon>
+                </button>
+                <button mat-icon-button color="accent" aria-label="Example icon button with a menu icon">
+                  <mat-icon>menu</mat-icon>
+                </button>
+                <button mat-icon-button color="warn" aria-label="Example icon button with a heart icon">
+                  <mat-icon>favorite</mat-icon>
+                </button>
+                <button mat-icon-button disabled aria-label="Example icon button with a open in new tab icon">
+                  <mat-icon>open_in_new</mat-icon>
+                </button>
+              </div>
+            </div>
+          </section>
+          <mat-divider></mat-divider>
+          <section>
+            <div class="example-label">FAB</div>
+            <div class="example-button-row">
+              <div class="example-flex-container">
+                <div class="example-button-container">
+                  <button mat-fab color="primary" aria-label="Example icon button with a delete icon">
+                    <mat-icon>delete</mat-icon>
+                  </button>
+                </div>
+                <div class="example-button-container">
+                  <button mat-fab color="accent" aria-label="Example icon button with a bookmark icon">
+                    <mat-icon>bookmark</mat-icon>
+                  </button>
+                </div>
+                <div class="example-button-container">
+                  <button mat-fab color="warn" aria-label="Example icon button with a home icon">
+                    <mat-icon>home</mat-icon>
+                  </button>
+                </div>
+                <div class="example-button-container">
+                  <button mat-fab disabled aria-label="Example icon button with a heart icon">
+                    <mat-icon>favorite</mat-icon>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <mat-divider></mat-divider>
+          <section>
+            <div class="example-label">Mini FAB</div>
+            <div class="example-button-row">
+              <div class="example-flex-container">
+                <div class="example-button-container">
+                  <button mat-mini-fab color="primary" aria-label="Example icon button with a menu icon">
+                    <mat-icon>menu</mat-icon>
+                  </button>
+                </div>
+                <div class="example-button-container">
+                  <button mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon">
+                    <mat-icon>plus_one</mat-icon>
+                  </button>
+                </div>
+                <div class="example-button-container">
+                  <button mat-mini-fab color="warn" aria-label="Example icon button with a filter list icon">
+                    <mat-icon>filter_list</mat-icon>
+                  </button>
+                </div>
+                <div class="example-button-container">
+                  <button mat-mini-fab disabled aria-label="Example icon button with a home icon">
+                    <mat-icon>home</mat-icon>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+        </div>
+        <div class="tab-pane fade" id="v-pills-card" role="tabpanel" aria-labelledby="v-pills-card-tab" tabindex="0">
+          <div class="col" style="margin: 20px;">
+            <mat-card class="example-card">
+              <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>Shiba Inu</mat-card-title>
+                <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+              </mat-card-header>
+              <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+              <mat-card-content>
+                <p>
+                  The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                  A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                  bred for hunting.
+                </p>
+              </mat-card-content>
+              <mat-card-actions>
+                <button mat-button>LIKE</button>
+                <button mat-button>SHARE</button>
+              </mat-card-actions>
+            </mat-card>
+          </div>
+          <div class="col" style="margin: 20px;">
+            <mat-card class="example-card">
+              <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+              <mat-card-title>Shiba Inu</mat-card-title>
+              <mat-card-content>
+                <p>This card has divider and indeterminate progress as footer</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam voluptatem, minus sit et vel dignissimos dolorum vero pariatur blanditiis cum explicabo recusandae ullam reiciendis eaque? Porro odio accusantium vero enim? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur veritatis deleniti natus maiores, quidem dolorum vero sunt. Dolore, distinctio veniam, dolor incidunt non, rem minima esse molestiae repudiandae natus amet!</p>
+              </mat-card-content>
+              <mat-divider inset></mat-divider>
+              <mat-card-actions>
+                <button mat-button>LIKE</button>
+                <button mat-button>SHARE</button>
+              </mat-card-actions>
+              <mat-card-footer>
+                <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+              </mat-card-footer>
+            </mat-card>
+          </div>
+          <div class="col" style="margin: 20px;">
+            <mat-card class="example-card">
+              <mat-card-title>Shiba Inu</mat-card-title>
+              <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+              <mat-card-content>
+                <p>This card indeterminates progress bar.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam voluptatem, minus sit et vel dignissimos dolorum vero pariatur blanditiis cum explicabo recusandae ullam reiciendis eaque? Porro odio accusantium vero enim? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur veritatis deleniti natus maiores, quidem dolorum vero sunt. Dolore, distinctio veniam, dolor incidunt non, rem minima esse molestiae repudiandae natus amet!</p>
+              </mat-card-content>
+              <mat-card-actions>
+                <button mat-button>LIKE</button>
+                <button mat-button>SHARE</button>
+              </mat-card-actions>
+            </mat-card>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="v-pills-dialogs" role="tabpanel" aria-labelledby="v-pills-dialogs-tab" tabindex="0">
+          <div class="col">
+            <ol>
+              <li>
+                <mat-form-field appearance="fill">
+                  <mat-label>What's your name?</mat-label>
+                  <input matInput [(ngModel)]="name">
+                </mat-form-field>
+              </li>
+              <li>
+                <button mat-raised-button (click)="openDialog()">Pick one</button>
+              </li>
+              <li *ngIf="animal">
+                You chose: <i>{{animal}}</i>
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="v-pills-forms" role="tabpanel" aria-labelledby="v-pills-forms-tab" tabindex="0">
+          <div class="col">
+            <div class="example-container">
+              <form class="example-container" [formGroup]="options">
+                <mat-checkbox formControlName="hideRequired">Hide required marker</mat-checkbox>
+                <div>
+                  <label>Float label: </label>
+                  <mat-radio-group formControlName="floatLabel">
+                    <mat-radio-button value="auto">Auto</mat-radio-button>
+                    <mat-radio-button value="always">Always</mat-radio-button>
+                    <mat-radio-button value="never">Never</mat-radio-button>
+                  </mat-radio-group>
+                </div>
+              </form>
+            
+              <mat-form-field
+                  [hideRequiredMarker]="options.value.hideRequired"
+                  [floatLabel]="options.value.floatLabel">
+                <input matInput placeholder="Simple placeholder" required>
+              </mat-form-field>
+            
+              <mat-form-field [floatLabel]="options.value.floatLabel">
+                <mat-label>Both a label and a placeholder</mat-label>
+                <input matInput placeholder="Simple placeholder">
+              </mat-form-field>
+            
+              <mat-form-field
+                  [hideRequiredMarker]="options.value.hideRequired"
+                  [floatLabel]="options.value.floatLabel">
+                <mat-select required>
+                  <mat-option>-- None --</mat-option>
+                  <mat-option value="option">Option</mat-option>
+                </mat-select>
+                <mat-label><mat-icon>favorite</mat-icon> <b> Fancy</b> <i> label</i></mat-label>
+              </mat-form-field>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="v-pills-progressbars" role="tabpanel" aria-labelledby="v-pills-progressbars-tab" tabindex="0">
+          <div class="row">
+            <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+          </div>
+          <div class="row">
+            <mat-progress-bar mode="buffer"></mat-progress-bar>
+          </div>
+          <div class="row">
+            <mat-progress-bar mode="query"></mat-progress-bar>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="v-pills-tables" role="tabpanel" aria-labelledby="v-pills-tables-tab" tabindex="0">  
+          <mat-form-field appearance="standard">
+            <mat-label>Filter</mat-label>
+            <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Mia" #input>
+          </mat-form-field>
+
+          <div class="mat-elevation-z8">
+            <table mat-table [dataSource]="dataSource" matSort>
+
+              <!-- ID Column -->
+              <ng-container matColumnDef="id">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>
+                <td mat-cell *matCellDef="let row"> {{row.id}} </td>
+              </ng-container>
+
+              <!-- Progress Column -->
+              <ng-container matColumnDef="progress">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Progress </th>
+                <td mat-cell *matCellDef="let row"> {{row.progress}}% </td>
+              </ng-container>
+
+              <!-- Name Column -->
+              <ng-container matColumnDef="name">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
+                <td mat-cell *matCellDef="let row"> {{row.name}} </td>
+              </ng-container>
+
+              <!-- Fruit Column -->
+              <ng-container matColumnDef="fruit">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Fruit </th>
+                <td mat-cell *matCellDef="let row"> {{row.fruit}} </td>
+              </ng-container>
+
+              <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+              <!-- Row shown when there is no matching data. -->
+              <tr class="mat-row" *matNoDataRow>
+                <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
+              </tr>
+            </table>
+
+            <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="v-pills-sidenavs" role="tabpanel" aria-labelledby="v-pills-sidenavs-tab" tabindex="0">
+          <mat-drawer-container class="example-container" [hasBackdrop]="hasBackdrop.value">
+            <mat-drawer #drawer [mode]="mode.value">I'm a drawer</mat-drawer>
+            <mat-drawer-content>
+              <mat-form-field appearance="fill">
+                <mat-label>Sidenav mode</mat-label>
+                <mat-select #mode value="side">
+                  <mat-option value="side">Side</mat-option>
+                  <mat-option value="over">Over</mat-option>
+                  <mat-option value="push">Push</mat-option>
+                </mat-select>
+              </mat-form-field>
+              <mat-form-field appearance="fill">
+                <mat-label>Has backdrop</mat-label>
+                <mat-select #hasBackdrop>
+                  <mat-option>Unset</mat-option>
+                  <mat-option [value]="true">True</mat-option>
+                  <mat-option [value]="false">False</mat-option>
+                </mat-select>
+              </mat-form-field>
+              <button mat-raised-button (click)="drawer.toggle()">Toggle drawer</button>
+            </mat-drawer-content>
+          </mat-drawer-container>
+        </div>
+        <div class="tab-pane fade" id="v-pills-stepper" role="tabpanel" aria-labelledby="v-pills-stepper-tab" tabindex="0">
+          <button mat-raised-button (click)="isLinear = !isLinear" id="toggle-linear">
+            {{!isLinear ? 'Enable linear mode' : 'Disable linear mode'}}
+          </button>
+          <mat-stepper [linear]="isLinear" #stepper>
+            <mat-step [stepControl]="firstFormGroup">
+              <form [formGroup]="firstFormGroup">
+                <ng-template matStepLabel>Fill out your name</ng-template>
+                <mat-form-field appearance="fill">
+                  <mat-label>Name</mat-label>
+                  <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
+                </mat-form-field>
+                <div>
+                  <button mat-button matStepperNext>Next</button>
+                </div>
+              </form>
+            </mat-step>
+            <mat-step [stepControl]="secondFormGroup" label="Fill out your address">
+              <form [formGroup]="secondFormGroup">
+                <mat-form-field appearance="fill">
+                  <mat-label>Address</mat-label>
+                  <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY"
+                         required>
+                </mat-form-field>
+                <div>
+                  <button mat-button matStepperPrevious>Back</button>
+                  <button mat-button matStepperNext>Next</button>
+                </div>
+              </form>
+            </mat-step>
+            <mat-step>
+              <ng-template matStepLabel>Done</ng-template>
+              <p>You are now done.</p>
+              <div>
+                <button mat-button matStepperPrevious>Back</button>
+                <button mat-button (click)="stepper.reset()">Reset</button>
+              </div>
+            </mat-step>
+          </mat-stepper>          
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
